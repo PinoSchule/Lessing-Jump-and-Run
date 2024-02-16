@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Cliff
+comment0.text=\r\n\ It's\ just\ a\ cliff.\r\n
+comment1.params=
+comment1.target=Cliff()
+comment1.text=\r\n\ Default\ consrtuctor\ -\ nothign\ to\ do\r\n
+comment2.params=flip
+comment2.target=Cliff(boolean)
+comment2.text=\r\n\ Create\ a\ horizontally\ mirrored\ cliff\ face.\r\n
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\r\n\ Act\:\ nothing\ to\ do\ here\ (the\ cliff\ does\ not\ do\ anything)\r\n
+numComments=4
