@@ -14,6 +14,9 @@ public class Pengu extends Mover
     public void act()
     {
         checkKeys();
+        
+        
+        
         checkFall();
     }
 
