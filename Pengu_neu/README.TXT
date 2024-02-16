@@ -12,4 +12,4 @@ This scenario is discussed in chapter 13.
 Copyright (c) Feena Quinn, Michael Kölling.
 
 The original version was written in Java; this version has been rewritten in Stride.
-dasdasdasda
+dasdasdasdasdasdasdada
