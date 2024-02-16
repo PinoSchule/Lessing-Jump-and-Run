@@ -15,8 +15,8 @@ public class Pengu extends Mover
     {
         checkKeys();
         
-        
-        
+        //irgendwas
+
         checkFall();
     }
 
