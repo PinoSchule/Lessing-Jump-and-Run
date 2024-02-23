@@ -18,6 +18,7 @@ public class Pengu extends Mover
         //irgendwas
 
         checkFall();
+        checkFall();
     }
 
     /**
