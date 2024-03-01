@@ -7,7 +7,7 @@ import greenfoot.*;
  */
 public class Pengu extends Mover
 {
-    private static final int jumpStrength = 25;
+    private static final int jumpStrength = 16;
     /**
      * Check keyboard input and react accordingly.
      */
@@ -26,20 +26,16 @@ public class Pengu extends Mover
      */
     private void checkKeys()
     {
-        if (Greenfoot.isKeyDown("left")) 
-        {
+        if (Greenfoot.isKeyDown("left")) {
             setImage("pengu-left.png");
             moveLeft();
         }
-        if (Greenfoot.isKeyDown("right")) 
-        {
+        if (Greenfoot.isKeyDown("right")) {
             setImage("pengu-right.png");
             moveRight();
         }
-        if (Greenfoot.isKeyDown("space")) 
-        {
-            if (onGround()) 
-            {
+        if (Greenfoot.isKeyDown("space")) {
+            if (onGround()) {
                 jump();
             }
         }
@@ -60,8 +56,7 @@ public class Pengu extends Mover
      */
     private void checkFall()
     {
-        if (onGround()) 
-        {
+        if (onGround()) {
             setVSpeed(0);
         }
         else {
