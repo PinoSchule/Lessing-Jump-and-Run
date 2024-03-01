@@ -11,6 +11,7 @@ public class LevelEnd extends Actor {
     }
 
     public LevelEnd() {
+                setImage("space.png");
     }
 
     public void act() {

@@ -25,7 +25,7 @@ public class Level1 extends World
         addObject( new  Cloud(), 369, 315);
         addObject( new  Pengu(), 66, 244);
         addObject(new LevelEnd(),400, 250);
-        
+
     }
     public Object getNextLevel(){
         return new Level2();
