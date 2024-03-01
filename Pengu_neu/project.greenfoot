@@ -3,11 +3,19 @@ class.Cliff.image=cliff.png
 class.Cliff.superclass=greenfoot.Actor
 class.Cloud.image=cloud.png
 class.Cloud.superclass=greenfoot.Actor
+<<<<<<< HEAD
 class.Mover.superclass=greenfoot.Actor
 class.Pengu.image=pengu-right.png
 class.Pengu.superclass=Mover
 class.Scene.image=clouds.jpg
 class.Scene.superclass=greenfoot.World
+=======
+class.Level1.image=rivets.jpg
+class.Level1.superclass=greenfoot.World
+class.Mover.superclass=greenfoot.Actor
+class.Pengu.image=pengu-right.png
+class.Pengu.superclass=Mover
+>>>>>>> f5d3d4c90cce42a2cadbf8261a3035a308d84538
 dependency1.from=Scene
 dependency1.to=Cliff
 dependency1.type=UsesDependency
@@ -17,6 +25,7 @@ dependency2.type=UsesDependency
 dependency3.from=Scene
 dependency3.to=Pengu
 dependency3.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=747
 editor.fx.0.width=818
 editor.fx.0.x=551
@@ -27,6 +36,18 @@ mainWindow.width=1938
 mainWindow.x=-9
 mainWindow.y=-9
 package.numDependencies=3
+=======
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=275
+editor.fx.0.y=-4
+height=822
+mainWindow.height=768
+mainWindow.width=1366
+mainWindow.x=-8
+mainWindow.y=-8
+package.numDependencies=0
+>>>>>>> f5d3d4c90cce42a2cadbf8261a3035a308d84538
 package.numTargets=5
 project.charset=UTF-8
 publish.hasSource=false
@@ -75,15 +96,27 @@ target4.width=80
 target4.x=160
 target4.y=70
 target5.height=50
+<<<<<<< HEAD
 target5.name=Scene
+=======
+target5.name=Level1
+>>>>>>> f5d3d4c90cce42a2cadbf8261a3035a308d84538
 target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
 target5.width=80
+<<<<<<< HEAD
 target5.x=70
 target5.y=10
 version=3.0.0
 width=1534
 world.lastInstantiated=Scene
+=======
+target5.x=0
+target5.y=0
+version=3.0.0
+width=1534
+world.lastInstantiated=Level1
+>>>>>>> f5d3d4c90cce42a2cadbf8261a3035a308d84538
 xPosition=0
 yPosition=0

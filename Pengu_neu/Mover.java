@@ -9,7 +9,7 @@ import greenfoot.*;
 public class Mover extends Actor
 {
     /* Gravity (acceleration downwards)*/
-    private static final int acceleration = 1;
+    private static final int acceleration = 2;
     /* Running speed (sidewards)*/
     private static final int speed = 7;
     /* Current vertical speed*/
