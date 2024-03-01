@@ -8,15 +8,14 @@ import greenfoot.*;
 public class Pengu extends Mover
 {
     private static final int jumpStrength = 16;
+    
+    public RealityAnchor CurrentCheckpoint;
     /**
      * Check keyboard input and react accordingly.
      */
     public void act()
     {
         checkKeys();
-        
-        //irgendwas
-
         checkFall();
     }
 

@@ -11,10 +11,11 @@ public class LevelEnd extends Actor {
     }
 
     public LevelEnd() {
-                setImage("space.png");
+                setImage("space.jpg");
     }
 
     public void act() {
+        
         Pengu pengu = (Pengu) this.getOneIntersectingObject(Pengu.class);
 
         if (pengu != null && this.isActive()) {
