@@ -1,4 +1,7 @@
 *.ctxt
+*.iml
+*.xml
+
 *.class
 
 *.class
