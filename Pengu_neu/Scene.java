@@ -14,10 +14,8 @@ public class Scene extends World
     public Scene()
     {
         super(1500, 750, 1);
-        //addObject( new  Cliff(false), 85, 441);
         addObject( new  Cliff(true), 665, 441);
         addObject( new  Cliff(true), 85, 441);
-        addObject( new  Cliff(false), 765, 344);
         
         addObject( new  Cloud(), 369, 315);
         addObject( new  Pengu(), 66, 244);
