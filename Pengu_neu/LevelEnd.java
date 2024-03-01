@@ -14,8 +14,9 @@ public class LevelEnd extends Actor {
     }
 
     public void act() {
-        Actor actor = this.getOneIntersectingObject((Class)null);
-        if (actor != null && this.isActive()) {
+        Pengu pengu = (Pengu) this.getOneIntersectingObject(Pengu.class);
+
+        if (pengu != null && this.isActive()) {
             Class<? extends World> nextLevelClass = levelMap.get(this.getWorld().getClass());
             if (nextLevelClass != null) {
                 try {
