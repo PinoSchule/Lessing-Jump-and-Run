@@ -7,7 +7,7 @@ import greenfoot.*;
  */
 public class Pengu extends Mover
 {
-    private static final int jumpStrength = 25;
+    private static final int jumpStrength = 16;
     /**
      * Check keyboard input and react accordingly.
      */
