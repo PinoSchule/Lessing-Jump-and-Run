@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Thu Mar 07 16:16:36 GMT 2024
+#Thu Mar 07 16:45:57 GMT 2024
 target4.type=ClassTarget
 class.Pengu.image=pengu-right.png
 dependency3.from=Scene
@@ -37,7 +37,7 @@ editor.fx.0.x=0
 target2.typeParameters=
 dependency3.to=Pengu
 target3.showInterface=false
-class.Cliff.image=cliff.png
+class.Cliff.image=dirt.png
 class.RealityAnchor.superclass=greenfoot.Actor
 class.LevelEnd.superclass=greenfoot.Actor
 target1.showInterface=false
@@ -96,7 +96,7 @@ dependency2.type=UsesDependency
 class.StartScreen.image=Startscreen.png
 class.Level1.image=brick.jpg
 target5.typeParameters=
-world.lastInstantiated=StartScreen
+world.lastInstantiated=Level1
 target2.showInterface=false
 mainWindow.height=744
 target3.name=Cliff
