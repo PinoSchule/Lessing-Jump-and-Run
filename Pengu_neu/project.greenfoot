@@ -1,11 +1,15 @@
 #Greenfoot project file
+<<<<<<< Updated upstream
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
 >>>>>>>=c49a0d0172e4cad58326e4562e0551b4e41b9d6c
+=======
+>>>>>>> Stashed changes
 class.Cliff.image=cliff.png
 class.Cliff.superclass=greenfoot.Actor
 class.Cloud.image=cloud.png
 class.Cloud.superclass=greenfoot.Actor
+<<<<<<< Updated upstream
 class.Level1.image=rivets.jpg
 class.Level1.superclass=greenfoot.World
 class.Level2.superclass=greenfoot.World
@@ -94,6 +98,33 @@ mainWindow.x=-9
 mainWindow.y=-9
 package.numDependencies=20
 package.numTargets=12
+=======
+class.Mover.superclass=greenfoot.Actor
+class.Pengu.image=pengu-right.png
+class.Pengu.superclass=Mover
+class.Scene.image=clouds.jpg
+class.Scene.superclass=greenfoot.World
+dependency1.from=Scene
+dependency1.to=Cliff
+dependency1.type=UsesDependency
+dependency2.from=Scene
+dependency2.to=Cloud
+dependency2.type=UsesDependency
+dependency3.from=Scene
+dependency3.to=Pengu
+dependency3.type=UsesDependency
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=822
+mainWindow.height=697
+mainWindow.width=1010
+mainWindow.x=40
+mainWindow.y=40
+package.numDependencies=3
+package.numTargets=5
+>>>>>>> Stashed changes
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -109,6 +140,7 @@ readme.x=10
 readme.y=10
 simulation.speed=40
 target1.height=50
+<<<<<<< Updated upstream
 target1.name=RealityAnchor
 target1.showInterface=false
 target1.type=ClassTarget
@@ -143,15 +175,33 @@ target12.y=0
 target2.height=50
 target2.name=Spike
 target2.naviview.expanded=true
+=======
+target1.name=Mover
+target1.showInterface=false
+target1.type=ClassTarget
+target1.typeParameters=
+target1.width=80
+target1.x=160
+target1.y=10
+target2.height=50
+target2.name=Pengu
+>>>>>>> Stashed changes
 target2.showInterface=false
 target2.type=ClassTarget
 target2.typeParameters=
 target2.width=80
+<<<<<<< Updated upstream
 target2.x=0
 target2.y=0
 target3.height=50
 target3.name=Cliff
 target3.naviview.expanded=true
+=======
+target2.x=10
+target2.y=130
+target3.height=50
+target3.name=Cliff
+>>>>>>> Stashed changes
 target3.showInterface=false
 target3.type=ClassTarget
 target3.typeParameters=
@@ -159,6 +209,7 @@ target3.width=80
 target3.x=70
 target3.y=70
 target4.height=50
+<<<<<<< Updated upstream
 target4.name=LevelWahl
 target4.showInterface=false
 target4.type=ClassTarget
@@ -169,10 +220,22 @@ target4.y=0
 target5.height=50
 target5.name=Mover
 target5.naviview.expanded=true
+=======
+target4.name=Cloud
+target4.showInterface=false
+target4.type=ClassTarget
+target4.typeParameters=
+target4.width=80
+target4.x=160
+target4.y=70
+target5.height=50
+target5.name=Scene
+>>>>>>> Stashed changes
 target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
 target5.width=80
+<<<<<<< Updated upstream
 target5.x=160
 target5.y=10
 target6.height=70
@@ -211,5 +274,12 @@ target9.y=70
 version=3.0.0
 width=1936
 world.lastInstantiated=StartScreen
+=======
+target5.x=70
+target5.y=10
+version=3.0.0
+width=1534
+world.lastInstantiated=Scene
+>>>>>>> Stashed changes
 xPosition=0
 yPosition=0
