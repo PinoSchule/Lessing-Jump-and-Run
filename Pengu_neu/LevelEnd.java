@@ -2,30 +2,24 @@ import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.HashMap;
 
 public class LevelEnd extends Actor {
-    private static HashMap<Class<? extends World>, Class<? extends World>> levelMap = new HashMap<>();
+    public Class<? extends World> targetLevel;
 
-    static {
-        //Hier die Levels hinpacken, levelMap.put(erstesLevel.class,dassfolgendeLevel.class)         also von welchen level zu welchen.  
-        levelMap.put(Level1.class, Level2.class);
-
-    }
-
-    public LevelEnd() {
+    public LevelEnd(Class<? extends World> targetLevel) {
+                setImage("space.jpg");
+                this.targetLevel = targetLevel;
     }
 
     public void act() {
+        
         Pengu pengu = (Pengu) this.getOneIntersectingObject(Pengu.class);
 
         if (pengu != null && this.isActive()) {
-            Class<? extends World> nextLevelClass = levelMap.get(this.getWorld().getClass());
-            if (nextLevelClass != null) {
                 try {
-                    World nextWorld = nextLevelClass.newInstance(); 
+                    World nextWorld = targetLevel.newInstance(); 
                     Greenfoot.setWorld(nextWorld);
                 } catch (InstantiationException | IllegalAccessException e) {
                     System.err.println("Error instantiating next level: " + e.getMessage());
                 }
-            }
         }
     }
 
