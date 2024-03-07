@@ -5,7 +5,7 @@ public class LevelEnd extends Actor {
     public Class<? extends World> targetLevel;
 
     public LevelEnd(Class<? extends World> targetLevel) {
-                setImage("space.jpg");
+                setImage("tube.png");
                 this.targetLevel = targetLevel;
     }
 
