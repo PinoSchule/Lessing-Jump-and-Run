@@ -25,11 +25,11 @@ public class Pengu extends Mover
     private void checkKeys()
     {
         if (Greenfoot.isKeyDown("left")) {
-            setImage("pengu-left.png");
+            setImage("Mario-left.png");
             moveLeft();
         }
         if (Greenfoot.isKeyDown("right")) {
-            setImage("pengu-right.png");
+            setImage("Mario-right.png");
             moveRight();
         }
         if (Greenfoot.isKeyDown("space")) {
