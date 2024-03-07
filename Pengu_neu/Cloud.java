@@ -10,7 +10,7 @@ public class Cloud extends Actor
     private int speed = 4;
     private int leftTurn = 270;
     private int rightTurn = 480;
-
+    List<Class> actorWhitelist = Arrays.asList(Pengu.class);
     /**
      * Move in the direction we are currently moving in. Turn if we reach a turning point.
      */
@@ -19,7 +19,7 @@ public class Cloud extends Actor
         setLocation(getX() + speed, getY());
         
         Actor actor = getOneIntersectingObject(null);
-        if (actor != null) {
+        if (actor != null && actorWhitelist.contains(actor.getClass())) {
             actor.setLocation(actor.getX() + speed, actor.getY());
         }
         
