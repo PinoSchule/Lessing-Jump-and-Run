@@ -9,7 +9,7 @@ import greenfoot.*;
 public class Mover extends Actor
 {
     /* Gravity (acceleration downwards)*/
-    private static final int acceleration = 1;
+    private static final int acceleration = 2;
     /* Running speed (sidewards)*/
     private static final int speed = 9;
     /* Current vertical speed*/
@@ -20,7 +20,13 @@ public class Mover extends Actor
      */
     public void moveRight()
     {
-        setLocation(getX() + speed, getY());
+        setLocation(getX() + speed, getY()-10);
+        boolean okToMove = getIntersectingObjects(null).isEmpty();
+        if (!okToMove)
+        {
+            setLocation(getX() - speed, getY());
+        }
+        setLocation(getX(), getY()+10);
     }
 
     /**
@@ -28,7 +34,13 @@ public class Mover extends Actor
      */
     public void moveLeft()
     {
-        setLocation(getX() - speed, getY());
+        setLocation(getX() - speed, getY()-10);
+        boolean okToMove = getIntersectingObjects(null).isEmpty();
+        if (!okToMove)
+        {
+            setLocation(getX() + speed, getY());
+        }
+        setLocation(getX(), getY()+10);
     }
 
     /**
@@ -36,8 +48,10 @@ public class Mover extends Actor
      */
     public boolean onGround()
     {
-        Object under = getOneObjectAtOffset(0, getImage().getHeight() / 2 - 16, null);
-        return under != null;
+        Object under = getOneObjectAtOffset(0, getImage().getHeight()/2 + 5, null);
+        Object above = getOneObjectAtOffset(0, 0, null);
+        boolean onGround = (under != null & above == null);
+        return onGround;
     }
 
     /**
