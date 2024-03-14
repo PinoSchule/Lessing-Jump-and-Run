@@ -9,24 +9,26 @@ import greenfoot.*;
 public class Mover extends Actor
 {
     /* Gravity (acceleration downwards)*/
-    private static final int acceleration = 2;
+    private static final int acceleration = 3;
     /* Running speed (sidewards)*/
     private static final int speed = 9;
     /* Current vertical speed*/
-    private int vSpeed = 0;
-
+    public static int vSpeed = 0;
+    List<Class> actorBlacklist = Arrays.asList(RealityAnchor.class);
     /**
      * 
      */
     public void moveRight()
     {
-        setLocation(getX() + speed, getY()-10);
-        boolean okToMove = getIntersectingObjects(null).isEmpty();
+        setLocation(getX() + speed, getY() - 30);
+        List allIntersects = getIntersectingObjects(Actor.class);
+        List anchorIntersects = getIntersectingObjects(RealityAnchor.class);
+        boolean okToMove = (allIntersects.size() == anchorIntersects.size());
+        setLocation(getX(), getY() + 30);
         if (!okToMove)
         {
-            setLocation(getX() - speed, getY());
+            setLocation(getX() + speed, getY());
         }
-        setLocation(getX(), getY()+10);
     }
 
     /**
@@ -34,24 +36,49 @@ public class Mover extends Actor
      */
     public void moveLeft()
     {
-        setLocation(getX() - speed, getY()-10);
-        boolean okToMove = getIntersectingObjects(null).isEmpty();
+        setLocation(getX() - speed, getY() - 30);
+        List allIntersects = getIntersectingObjects(Actor.class);
+        List anchorIntersects = getIntersectingObjects(RealityAnchor.class);
+        boolean okToMove = (allIntersects.size() == anchorIntersects.size());
+        setLocation(getX(), getY() + 30);
         if (!okToMove)
         {
             setLocation(getX() + speed, getY());
         }
-        setLocation(getX(), getY()+10);
+    }
+    
+    /**
+     * 
+     */
+    public boolean inFreeFall()
+    {
+        setLocation(getX(), getY());
+        boolean aboveGround = (getIntersectingObjects(Actor.class).size() == getIntersectingObjects(RealityAnchor.class).size());
+        setLocation(getX(), getY());
+        return aboveGround;
+    }
+    
+    /**
+     * 
+     */
+    public boolean smthAbove()
+    {
+        setLocation(getX(), getY() - mod(vSpeed));
+        boolean aboveGround = (getIntersectingObjects(Actor.class).size() != getIntersectingObjects(RealityAnchor.class).size());
+        setLocation(getX(), getY() + mod(vSpeed));
+        return aboveGround;
     }
 
+    
     /**
      * 
      */
     public boolean onGround()
     {
-        Object under = getOneObjectAtOffset(0, getImage().getHeight()/2 + 5, null);
-        Object above = getOneObjectAtOffset(0, 0, null);
-        boolean onGround = (under != null & above == null);
-        return onGround;
+        setLocation(getX(), getY() + 20);
+        boolean smthBeneath = (getIntersectingObjects(Actor.class).size() != getIntersectingObjects(RealityAnchor.class).size());
+        setLocation(getX(), getY() - 20);
+        return smthBeneath;
     }
 
     /**
@@ -61,7 +88,7 @@ public class Mover extends Actor
     {
         vSpeed = speed;
     }
-
+    
     /**
      * 
      */
@@ -72,6 +99,17 @@ public class Mover extends Actor
         if (atBottom()) {
             gameEnd();
         }
+    }
+    
+    /**
+     * 
+     */
+    public int mod(int x)
+    {
+        if (x < 0) {
+            return -x;
+        }
+        else {return x;}
     }
 
     /**
