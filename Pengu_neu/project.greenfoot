@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Thu Mar 07 16:45:57 GMT 2024
+#Thu Mar 14 15:56:06 CET 2024
 target4.type=ClassTarget
 class.Pengu.image=pengu-right.png
 dependency3.from=Scene
@@ -92,14 +92,16 @@ target3.type=ClassTarget
 class.Cloud.superclass=greenfoot.Actor
 target4.width=80
 dependency2.from=Scene
+class.LevelWahlText.superclass=greenfoot.Actor
 dependency2.type=UsesDependency
 class.StartScreen.image=Startscreen.png
 class.Level1.image=brick.jpg
 target5.typeParameters=
-world.lastInstantiated=Level1
+world.lastInstantiated=StartScreen
 target2.showInterface=false
 mainWindow.height=744
 target3.name=Cliff
 target3.width=80
 project.charset=UTF-8
+class.LevelWahl.image=Screenshot 2024-03-07 at 16-11-32 Jump\u2019n Run.png
 target4.showInterface=false
