@@ -7,7 +7,7 @@ import greenfoot.*;
  */
 public class Pengu extends Mover
 {
-    public static final int jumpStrength = 25;
+    public static final int jumpStrength = 35;
     public RealityAnchor CurrentCheckpoint;
     /**
      * Check keyboard input and react accordingly.
