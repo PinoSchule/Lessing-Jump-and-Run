@@ -20,7 +20,7 @@ public class Level2 extends World
         addObject( new  Pengu(), 66, 0);
         int lim = 48;
         for(int i =0; i<=650/lim;i++){
-    addObject( new  Cliff(), i*lim, 626);
+            addObject( new  Cliff(), i*lim, 626);
     }
     }
     public Object getNextLevel(){
