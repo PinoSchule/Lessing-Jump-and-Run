@@ -22,7 +22,6 @@ public class Level1 extends World
         int lim = 48;
         for(int i =0; i<=624/lim;i++){
             addObject( new  Cliff(), i*lim, 600);
-            System.out.println("hallo");
         }
         prepare();
     }
@@ -40,9 +39,6 @@ public class Level1 extends World
         Spike spike2 = new Spike(0);
         addObject(spike2,197,561);
         spike2.setLocation(191,553);
-        Spike spike3 = new Spike(0);
-        addObject(spike3,246,560);
-        spike3.setLocation(237,552);
         RealityAnchor realityanchor = new RealityAnchor();
         addObject(realityanchor,73,553);
 
@@ -50,13 +46,13 @@ public class Level1 extends World
         RealityAnchor realityanchor2 = new RealityAnchor();
         addObject(realityanchor2,531,553);
         realityanchor2.setLocation(481,543);
-        Cliff cliff = new Cliff(false);
+        Cliff cliff = new Cliff();
         addObject(cliff,536,557);
         cliff.setLocation(529,553);
         realityanchor2.setLocation(530,497);
-        Cliff cliff2 = new Cliff(false);
+        Cliff cliff2 = new Cliff();
         addObject(cliff2,446,444);
-        Cloud cloud = new Cloud();
+        Cloud cloud = new Cloud(false,4);
         addObject(cloud,313,407);
         cloud.setLocation(306,388);
         cloud.setLocation(328,388);
@@ -64,9 +60,9 @@ public class Level1 extends World
         cloud.setLocation(370,403);
         cliff2.setLocation(454,427);
         cloud.setLocation(375,391);
-        Cliff cliff3 = new Cliff(false);
+        Cliff cliff3 = new Cliff();
         addObject(cliff3,30,371);
-        Cliff cliff4 = new Cliff(false);
+        Cliff cliff4 = new Cliff();
         addObject(cliff4,83,378);
         cliff4.setLocation(78,373);
         cliff4.setLocation(77,371);
@@ -92,7 +88,7 @@ public class Level1 extends World
         Spike spike4 = new Spike(0);
         addObject(spike4,276,357);
         removeObject(spike4);
-        Cliff cliff5 = new Cliff(false);
+        Cliff cliff5 = new Cliff();
         addObject(cliff5,63,244);
         cliff5.setLocation(50,220);
         LevelEnd levelend = new LevelEnd(Level2.class);
@@ -100,5 +96,17 @@ public class Level1 extends World
         levelend.setLocation(52,177);
         cliff5.setLocation(50,222);
 
+        cliff2.setLocation(471,469);
+        cloud.setLocation(370,419);
+        cliff5.setLocation(73,338);
+
+        cliff5.setLocation(173,286);
+        removeObject(cliff5);
+
+        cliff3.setLocation(59,376);
+
+        cliff2.setLocation(468,420);
+        cliff2.setLocation(460,442);
+        levelend.setLocation(55,348);
     }
 }
