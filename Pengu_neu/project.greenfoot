@@ -1,7 +1,7 @@
 #Greenfoot properties
-#Thu Mar 07 16:45:57 GMT 2024
+#Fri Mar 15 12:14:50 GMT 2024
 target4.type=ClassTarget
-class.Pengu.image=pengu-right.png
+class.Pengu.image=Mario-right.png
 dependency3.from=Scene
 xPosition=0
 target3.height=50
