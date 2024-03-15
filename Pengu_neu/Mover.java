@@ -86,6 +86,7 @@ public class Mover extends Actor
      */
     public void setVSpeed(int speed)
     {
+        
         vSpeed = speed;
     }
     
