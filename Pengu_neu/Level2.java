@@ -8,7 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Level2 extends World
 {
-
+    Levelpipe pipe1 = new Levelpipe();
+    Levelpipe pipe2 = new Levelpipe();
+    Pengu pengu1 = new Pengu(); 
     /**
      * Constructor for objects of class Level1.
      * 

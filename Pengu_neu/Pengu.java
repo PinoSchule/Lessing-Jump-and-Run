@@ -65,4 +65,12 @@ public class Pengu extends Mover
             setVSpeed(0);
         }
     }
+    public void checkPipe()
+   {
+       if (isTouching(Levelpipe.class)) {
+           getWorld().removeObject(this);
+       }
+       else {
+       }
+   }
 }

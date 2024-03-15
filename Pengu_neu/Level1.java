@@ -8,7 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Level1 extends World
 {
-
+    Levelpipe pipe1 = new Levelpipe();
+    Levelpipe pipe2 = new Levelpipe();
+    Pengu pengu1 = new Pengu(); 
     /**
      * Constructor for objects of class Level1.
      * 
@@ -24,12 +26,19 @@ public class Level1 extends World
         }
         addObject( new  Cloud(), 369, 315);
         addObject( new  Spike(0), 320, 315);
-        addObject( new  Pengu(), 66, 244);
         addObject(new LevelEnd(Level2.class),400, 250);
+        addObject( pengu1, 6, 244);
+        addObject(pipe1, 125, 235);
+        addObject( pipe2, 625, 235);
 
         prepare();
     }
+    public void act()
+   {
+    pengu1.checkPipe();
 
+
+   }
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
