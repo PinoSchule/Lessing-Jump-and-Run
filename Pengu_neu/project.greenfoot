@@ -2,7 +2,7 @@
 =\=\=\=\=\=\=
 <<<<<<<=Updated\ upstream
 >>>>>>>=Stashed\ changes
-class.Cliff.image=dirt2.png
+class.Cliff.image=finaldirt24.png
 class.Cliff.superclass=greenfoot.Actor
 class.Cloud.image=cloud.png
 class.Cloud.superclass=greenfoot.Actor
