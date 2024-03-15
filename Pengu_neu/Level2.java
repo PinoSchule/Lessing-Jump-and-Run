@@ -17,11 +17,11 @@ public class Level2 extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(500, 500, 1); 
-        addObject( new  Pengu(), 66, 0);
+        addObject( new Pengu(), 66, 0);
         int lim = 10;
         for(int i =0; i<lim;i++){
-    addObject( new  Spike(1), i*(500/lim), 470);
-    }
+            addObject( new  Spike(1), i*(500/lim), 470);
+        }
     }
     public Object getNextLevel(){
         return new Level1();
