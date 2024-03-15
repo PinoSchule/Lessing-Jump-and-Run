@@ -16,15 +16,7 @@ public class Cliff extends Actor
     }
 
     /**
-     * Create a horizontally mirrored cliff face.
-     */
-    public Cliff(boolean flip)
-    {
-        if (flip) {
-            getImage().mirrorHorizontally();
-        }
-    }
-
+     
     /**
      * Act: nothing to do here (the cliff does not do anything)
      */
