@@ -47,6 +47,7 @@ public class RealityAnchor extends Actor
                 pengu = (Pengu) this.getOneIntersectingObject(Pengu.class);
                 if (pengu != null) {
                     doAnimation = true;
+                     IsActive = true;   
                 }
         }}
     }
