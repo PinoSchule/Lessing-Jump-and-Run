@@ -58,7 +58,7 @@ public class Pengu extends Mover
         }
         else if (inFreeFall() && smthAbove()) {
             setLocation(getX(), getY() + mod(vSpeed));
-            setVSpeed(-vSpeed);
+            setVSpeed(-vSpeed-3);
             fall();
         }
         else {
