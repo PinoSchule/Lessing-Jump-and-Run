@@ -11,6 +11,7 @@ public class RealityAnchor extends Actor
 {
     public boolean perish = false;
     public boolean IsActive = false;
+
     private boolean doAnimation = false;
     private int TimeStep = 1;
     private int frame = 0;
@@ -26,7 +27,7 @@ public class RealityAnchor extends Actor
             teleportBack(pengu);
         }
 
-        }else if(doAnimation){
+        }else if (doAnimation){
             TimeStep++;
             setImage("flag_"+frame+".png");
             if(TimeStep % TickPeriode == 0){
@@ -39,15 +40,16 @@ public class RealityAnchor extends Actor
                         anchor.setImage("flag_0.png"); 
                     }
                 }
-                    IsActive = true;
+                    
                     pengu.CurrentCheckpoint = this;
+                    this.IsActive = true;
                 }
             }
         }else{
                 pengu = (Pengu) this.getOneIntersectingObject(Pengu.class);
                 if (pengu != null) {
                     doAnimation = true;
-                     IsActive = true;   
+                  
                 }
         }}
     }
