@@ -21,16 +21,21 @@ public class Mover extends Actor
     public void moveRight()
     {
         setLocation(getX() + speed, getY() - 30);
-        List allIntersects = getIntersectingObjects(Actor.class);
-        List anchorIntersects = getIntersectingObjects(RealityAnchor.class);
-        boolean okToMove = (allIntersects.size() == anchorIntersects.size());
+        List allIntersects_actor = getIntersectingObjects(Actor.class);
+        List anchorIntersects_actor = getIntersectingObjects(RealityAnchor.class);
+        boolean okToMove = (allIntersects_actor.size() == anchorIntersects.size());
         setLocation(getX(), getY() + 30);
         if (!okToMove)
         {
             setLocation(getX() + speed, getY());
         }
     }
-
+    
+    public void check_booster()
+    {
+        List allIntersects_booster = getIntersectingObjects(Booster.class);
+    }
+    
     /**
      * 
      */
