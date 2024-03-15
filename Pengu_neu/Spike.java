@@ -14,6 +14,7 @@ public class Spike extends Actor
          this.type = type;
     }
     public void act(){
+        if(type == 0){setImage("diamond_spike.png");}
         if(type == 1){setImage("car-4.png");}
         Pengu pengu = (Pengu) this.getOneIntersectingObject(Pengu.class);
         if(pengu != null){
