@@ -15,10 +15,10 @@ public class Level1 extends World
      */
     public Level1()
     {    
-        super(500, 500, 1); 
+        super(650, 650, 1); 
         addObject( new  Cliff(true), 85, 441);
-         addObject( new  RealityAnchor(), 100, 260);
-         addObject( new  RealityAnchor(), 200, 260);
+        addObject( new  RealityAnchor(), 100, 260);
+        addObject( new  RealityAnchor(), 200, 260);
         for(int i = 0; i < 50; i++){
             addObject(new Cloud(), i*10,1);
         }
@@ -27,5 +27,15 @@ public class Level1 extends World
         addObject( new  Pengu(), 66, 244);
         addObject(new LevelEnd(Level2.class),400, 250);
 
+        prepare();
+    }
+
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+       
     }
 }

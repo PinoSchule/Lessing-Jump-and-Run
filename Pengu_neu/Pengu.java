@@ -7,8 +7,7 @@ import greenfoot.*;
  */
 public class Pengu extends Mover
 {
-    private static final int jumpStrength = 25;
-    
+    public static final int jumpStrength = 35;
     public RealityAnchor CurrentCheckpoint;
     /**
      * Check keyboard input and react accordingly.
@@ -18,18 +17,18 @@ public class Pengu extends Mover
         checkKeys();
         checkFall();
     }
-
+ 
     /**
      * 
      */
     private void checkKeys()
     {
         if (Greenfoot.isKeyDown("left")) {
-            setImage("Mario-left.png");
+            setImage("pengu-left.png");
             moveLeft();
         }
         if (Greenfoot.isKeyDown("right")) {
-            setImage("Mario-right.png");
+            setImage("pengu-right.png");
             moveRight();
         }
         if (Greenfoot.isKeyDown("space")) {
@@ -54,11 +53,16 @@ public class Pengu extends Mover
      */
     private void checkFall()
     {
-        if (onGround()) {
-            setVSpeed(0);
+        if (inFreeFall() && !smthAbove()) {
+            fall();
+        }
+        else if (inFreeFall() && smthAbove()) {
+            setLocation(getX(), getY() + mod(vSpeed));
+            setVSpeed(-vSpeed);
+            fall();
         }
         else {
-            fall();
+            setVSpeed(0);
         }
     }
 }

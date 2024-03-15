@@ -16,6 +16,29 @@ public class LevelWahl extends World
     public LevelWahl()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(750, 348, 1); 
+        super(1500, 748, 1); 
+        prepare();
     }
+
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        LevelWahlText levelwahltext = new LevelWahlText();
+        addObject(levelwahltext,959,376);
+    }
+    
+    public void act()
+    {
+    if(Greenfoot.isKeyDown("1"))
+    {
+    Greenfoot.setWorld(new Level1());
+    }
+    if(Greenfoot.isKeyDown("2"))
+    {
+    Greenfoot.setWorld(new Level2());
+    }
+}
 }
