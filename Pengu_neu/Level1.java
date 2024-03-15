@@ -15,7 +15,7 @@ public class Level1 extends World
      */
     public Level1()
     {    
-        super(500, 500, 1); 
+        super(650, 650, 1); 
         addObject( new  Cliff(true), 85, 441);
         addObject( new  RealityAnchor(), 100, 260);
         addObject( new  RealityAnchor(), 200, 260);
