@@ -16,7 +16,6 @@ public class Level1 extends World
      * 
      */
     public Level1()
-<<<<<<< HEAD
     {    
         super(500, 500, 1); 
         addObject( new  Cliff(true), 85, 441);
@@ -28,16 +27,11 @@ public class Level1 extends World
         addObject( new  Cloud(), 369, 315);
         addObject( new  Spike(0), 320, 315);
         addObject(new LevelEnd(Level2.class),400, 250);
-        addObject( pengu1, 6, 244);
+        addObject( pengu1, 6, 400);
         addObject(pipe1, 125, 235);
         addObject( pipe2, 625, 235);
-=======
-    {
->>>>>>> c0ef11aa2831e7cc18b55b7c9a499784191496fe
+    }{
 
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(624, 624, 1); 
-        addObject(new Pengu(), 73, 553);
         int lim = 48;
         for(int i =0; i<=624/lim;i++){
             addObject( new  Cliff(), i*lim, 600);
@@ -46,13 +40,13 @@ public class Level1 extends World
         prepare();
     }
     public void act()
-   {
-    pengu1.checkPipe();
+    {
+     pengu1.checkPipe();
 
 
-   }
+    }
     /**
-     * Prepare the world for the start of the program.
+      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
      */
     private void prepare()
