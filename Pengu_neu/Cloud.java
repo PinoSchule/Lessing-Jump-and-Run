@@ -35,15 +35,11 @@ public class Cloud extends Actor
             if(pengu != null){
             
             if(pengu.CurrentCheckpoint != null){
-            
+            pengu.dead = true;
             pengu.CurrentCheckpoint.teleportBack(pengu);
             
             }else{
-                 try {
-                    Greenfoot.setWorld(StartScreen.class.newInstance());
-                    } catch (InstantiationException | IllegalAccessException e) {
-                        System.err.println("Error instantiating next level: " + e.getMessage());
-                    }
+                 pengu.lost = true;
         }}}else{
             if (actor != null && actorWhitelist.contains(actor.getClass())) {
             actor.setLocation(actor.getX() + speed, actor.getY());

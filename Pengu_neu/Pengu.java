@@ -7,11 +7,10 @@ import greenfoot.*;
  */
 public class Pengu extends Mover
 {
-
     public static final int jumpStrength = 25;
-
-   
-
+    private int lebenspunkte = 3;
+    public boolean dead = false;
+    public boolean lost = false;
     public RealityAnchor CurrentCheckpoint;
     /**
      * Check keyboard input and react accordingly.
@@ -20,7 +19,7 @@ public class Pengu extends Mover
     {
         checkKeys();
         checkFall();
-       
+        checkLife();
     }
  
     /**
@@ -69,6 +68,23 @@ public class Pengu extends Mover
         }
         else {
             setVSpeed(0);
+        }
+    }
+    
+    private void checkLife()
+    {
+        if (dead)
+        {
+            lebenspunkte --;
+            dead = false;
+        }
+        if (lebenspunkte <= 0)
+        {
+            lost = true;
+        }
+        if (lost)
+        {
+            gameEnd();
         }
     }
 }

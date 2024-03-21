@@ -13,4 +13,6 @@ comment3.text=\r\n\ Start\ a\ jump\ action.\r\n
 comment4.params=
 comment4.target=void\ checkFall()
 comment4.text=\r\n\ Check\ whether\ we\ are\ falling.\ If\ so,\ fall.\ \r\n\ If\ we're\ on\ ground,\ stop\ the\ fall.\r\n
-numComments=5
+comment5.params=
+comment5.target=void\ checkLife()
+numComments=6

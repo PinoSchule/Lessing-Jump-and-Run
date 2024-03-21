@@ -24,6 +24,7 @@ public class RealityAnchor extends Actor
 
         if(IsActive){
         if (isOutsideWorldBounds(pengu)) {
+            pengu.dead = true;
             teleportBack(pengu);
         }
 
