@@ -11,7 +11,7 @@ public class Mover extends Actor
     /* Gravity (acceleration downwards)*/
     private static final int acceleration = 3;
     /* Running speed (sidewards)*/
-    private static final int speed = 9;
+    private static final int speed = 5;
     /* Current vertical speed*/
     public static int vSpeed = 0;
     List<Class> actorBlacklist = Arrays.asList(RealityAnchor.class);

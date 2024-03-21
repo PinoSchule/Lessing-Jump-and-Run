@@ -8,7 +8,7 @@ import greenfoot.*;
 public class Pengu extends Mover
 {
 
-    public static final int jumpStrength = 25;
+    public static final int jumpStrength = 26;
 
    
 
@@ -64,7 +64,7 @@ public class Pengu extends Mover
         }
         else if (inFreeFall() && smthAbove()) {
             setLocation(getX(), getY() + mod(vSpeed));
-            setVSpeed(-vSpeed-3);
+            setVSpeed(-vSpeed-2);
             fall();
         }
         else {
