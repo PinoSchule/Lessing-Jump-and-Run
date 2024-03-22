@@ -59,7 +59,7 @@ public class RealityAnchor extends Actor
         World world = getWorld();
         int x = actor.getX();
         int y = actor.getY();
-        return x < offset || y < offset || x >= world.getWidth()-offset || y >= world.getHeight()-offset;
+        return  y >= world.getHeight()-offset;
     }
 
     public void teleportBack(Pengu pengu) {
