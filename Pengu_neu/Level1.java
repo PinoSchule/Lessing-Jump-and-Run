@@ -19,7 +19,7 @@ public class Level1 extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(624, 624, 1); 
         addObject(new Pengu(), 73, 553);
-        addObject(new house(), 30, 555);
+        addObject(new house(), 10, 555);
         int lim = 48;
         for(int i =0; i<=624/lim;i++){
             addObject( new  Cliff(), i*lim, 600);
