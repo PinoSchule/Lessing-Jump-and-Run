@@ -26,6 +26,7 @@ class.StartSatz.superclass=greenfoot.Actor
 class.StartScreen.image=Startscreen.png
 class.StartScreen.superclass=greenfoot.World
 class.Wall.superclass=greenfoot.Actor
+<<<<<<< Updated upstream
 class.house.image=house-08.png
 class.house.superclass=greenfoot.Actor
 dependency1.from=RealityAnchor
@@ -60,11 +61,46 @@ dependency18.to=Cloud
 dependency18.type=UsesDependency
 dependency19.from=Level2
 dependency19.to=RealityAnchor
+=======
+dependency1.from=RealityAnchor
+dependency1.to=Pengu
+dependency1.type=UsesDependency
+dependency10.from=Cloud
+dependency10.to=Pengu
+dependency10.type=UsesDependency
+dependency11.from=Cloud
+dependency11.to=StartScreen
+dependency11.type=UsesDependency
+dependency12.from=Cloud
+dependency12.to=Cliff
+dependency12.type=UsesDependency
+dependency13.from=Level2
+dependency13.to=Pengu
+dependency13.type=UsesDependency
+dependency14.from=Level2
+dependency14.to=Cliff
+dependency14.type=UsesDependency
+dependency15.from=Level2
+dependency15.to=Level1
+dependency15.type=UsesDependency
+dependency16.from=Level2
+dependency16.to=Spike
+dependency16.type=UsesDependency
+dependency17.from=Level2
+dependency17.to=Cloud
+dependency17.type=UsesDependency
+dependency18.from=Level2
+dependency18.to=RealityAnchor
+dependency18.type=UsesDependency
+dependency19.from=Level2
+dependency19.to=LevelEnd
+>>>>>>> Stashed changes
 dependency19.type=UsesDependency
 dependency2.from=Spike
 dependency2.to=StartScreen
 dependency2.type=UsesDependency
 dependency20.from=Level2
+<<<<<<< Updated upstream
 dependency20.to=LevelEnd
 dependency20.type=UsesDependency
 dependency21.from=Level2
@@ -96,11 +132,42 @@ dependency29.to=house
 dependency29.type=UsesDependency
 dependency3.from=Spike
 dependency3.to=Pengu
+=======
+dependency20.to=StartScreen
+dependency20.type=UsesDependency
+dependency21.from=Level1
+dependency21.to=Pengu
+dependency21.type=UsesDependency
+dependency22.from=Level1
+dependency22.to=Cliff
+dependency22.type=UsesDependency
+dependency23.from=Level1
+dependency23.to=Spike
+dependency23.type=UsesDependency
+dependency24.from=Level1
+dependency24.to=RealityAnchor
+dependency24.type=UsesDependency
+dependency25.from=Level1
+dependency25.to=Cloud
+dependency25.type=UsesDependency
+dependency26.from=Level1
+dependency26.to=LevelEnd
+dependency26.type=UsesDependency
+dependency27.from=Level1
+dependency27.to=Level2
+dependency27.type=UsesDependency
+dependency28.from=LevelEnd
+dependency28.to=Pengu
+dependency28.type=UsesDependency
+dependency3.from=LevelWahl
+dependency3.to=LevelWahlText
+>>>>>>> Stashed changes
 dependency3.type=UsesDependency
 dependency30.from=LevelEnd
 dependency30.to=Pengu
 dependency30.type=UsesDependency
 dependency4.from=LevelWahl
+<<<<<<< Updated upstream
 dependency4.to=LevelWahlText
 dependency4.type=UsesDependency
 dependency5.from=LevelWahl
@@ -122,11 +189,38 @@ editor.fx.0.height=747
 editor.fx.0.width=818
 editor.fx.0.x=551
 editor.fx.0.y=94
+=======
+dependency4.to=Level1
+dependency4.type=UsesDependency
+dependency5.from=LevelWahl
+dependency5.to=Level2
+dependency5.type=UsesDependency
+dependency6.from=Mover
+dependency6.to=RealityAnchor
+dependency6.type=UsesDependency
+dependency7.from=StartScreen
+dependency7.to=StartSatz
+dependency7.type=UsesDependency
+dependency8.from=StartScreen
+dependency8.to=LevelWahl
+dependency8.type=UsesDependency
+dependency9.from=Pengu
+dependency9.to=RealityAnchor
+dependency9.type=UsesDependency
+editor.fx.0.height=1048
+editor.fx.0.width=1938
+editor.fx.0.x=-9
+editor.fx.0.y=-9
+>>>>>>> Stashed changes
 mainWindow.height=1048
 mainWindow.width=1938
 mainWindow.x=-9
 mainWindow.y=-9
+<<<<<<< Updated upstream
 package.numDependencies=30
+=======
+package.numDependencies=28
+>>>>>>> Stashed changes
 package.numTargets=15
 project.charset=windows-1252
 readme.height=58
@@ -134,7 +228,11 @@ readme.name=@README
 readme.width=47
 readme.x=10
 readme.y=10
+<<<<<<< Updated upstream
 simulation.speed=45
+=======
+simulation.speed=37
+>>>>>>> Stashed changes
 target1.height=50
 target1.name=RealityAnchor
 target1.showInterface=false
@@ -232,7 +330,11 @@ target6.width=100
 target6.x=0
 target6.y=0
 target7.height=50
+<<<<<<< Updated upstream
 target7.name=house
+=======
+target7.name=Scene
+>>>>>>> Stashed changes
 target7.showInterface=false
 target7.type=ClassTarget
 target7.typeParameters=

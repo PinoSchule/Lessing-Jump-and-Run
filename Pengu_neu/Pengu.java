@@ -7,8 +7,12 @@ import greenfoot.*;
  */
 public class Pengu extends Mover
 {
+<<<<<<< Updated upstream
 
     public static final int jumpStrength = 29;
+=======
+    public static final int jumpStrength = 25;
+>>>>>>> Stashed changes
 
    
 
@@ -64,7 +68,11 @@ public class Pengu extends Mover
         }
         else if (inFreeFall() && smthAbove()) {
             setLocation(getX(), getY() + mod(vSpeed));
+<<<<<<< Updated upstream
             setVSpeed(-vSpeed-1);
+=======
+            setVSpeed(-vSpeed-2);
+>>>>>>> Stashed changes
             fall();
         }
         else {
