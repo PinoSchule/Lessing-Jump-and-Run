@@ -18,17 +18,12 @@ public class Spike extends Actor
         if(type == 1){setImage("car-4.png");}
         Pengu pengu = (Pengu) this.getOneIntersectingObject(Pengu.class);
         if(pengu != null){
-        
-        if(pengu.CurrentCheckpoint != null){
-        
-        pengu.CurrentCheckpoint.teleportBack(pengu);
+            pengu.dead = true;
+            if(pengu.CurrentCheckpoint != null){
+                pengu.CurrentCheckpoint.teleportBack(pengu);
         
         }else{
-             try {
-                Greenfoot.setWorld(StartScreen.class.newInstance());
-                } catch (InstantiationException | IllegalAccessException e) {
-                    System.err.println("Error instantiating next level: " + e.getMessage());
-                }
+             pengu.lost = true;
     }}
 }
 }
