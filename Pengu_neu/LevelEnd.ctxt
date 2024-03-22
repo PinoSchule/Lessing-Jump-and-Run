@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=LevelEnd
+comment1.params=targetLevel
+comment1.target=LevelEnd(java.lang.Class)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=boolean\ isActive()
+numComments=4
